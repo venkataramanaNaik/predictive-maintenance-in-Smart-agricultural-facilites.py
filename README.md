@@ -1,0 +1,2 @@
+# predictive-maintenance-in-Smart-agricultural-facilites.py
+This project implements an advanced AI system that combines deep learning and machine learning methods (LSTM and XGBoost) with eXplainable AI (XAI) techniques for predictive maintenance in smart agricultural facilities. The solution processes multi-modal data from sensors, weather stations, crop records predict equipment failures and maintenance 
