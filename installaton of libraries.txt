@@ -1,0 +1,11 @@
+Pandas, NumPy: Data manipulation and preprocessing
+
+Scikit-learn: Feature selection, model evaluation
+
+TensorFlow, Keras: Deep learning models (LSTM)
+
+XGBoost: Gradient boosting models
+
+SHAP, LIME: Explainable AI techniques
+
+Dash, Plotly: Interactive dashboard for UI
