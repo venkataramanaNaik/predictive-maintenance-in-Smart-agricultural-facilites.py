@@ -1,0 +1,33 @@
+import pandas as pd
+import numpy as np
+import random
+from datetime import timedelta, datetime
+
+n_samples = 1000
+start_date = datetime(2025, 10, 1, 8)
+timestamps = [start_date + timedelta(hours=i) for i in range(n_samples)]
+
+# I have been every dataset hasbeen fake only. which can be provide this results only.
+
+
+data = {
+    'timestamp': timestamps,
+    'sensor_temp': np.random.normal(35, 7, n_samples).round(1),
+    'sensor_vibration': np.random.normal(1, 0.4, n_samples).round(2),
+    'sensor_moisture': np.random.randint(20, 70, n_samples),
+    'last_maintenance': [start_date - timedelta(days=random.randint(0,30)) for _ in range(n_samples)],
+    'crop_type': [random.choice(['Wheat', 'Corn', 'Barley', 'Rice']) for _ in range(n_samples)],
+    'weather_temp': np.random.normal(32, 4, n_samples).round(1),
+    'rain_mm': np.random.randint(0, 10, n_samples),
+    'equipment_status': [random.choices(['normal', 'needs_maintenance', 'broken'], [0.7, 0.2, 0.1])[0] for _ in range(n_samples)]
+}
+
+
+df = pd.DataFrame(data)
+df.to_csv('fake_agri_maintenance.csv', index=False)
+
+
+
+# this an fake dataset to this project.
+
+# which can be work on this project only. which can be give accuratly results above dataset only.
